@@ -4,6 +4,7 @@ This is a timer program written in Python
 
 ![Nerves of Steel~](https://media.makeameme.org/created/do-you-have-3decfb9715.jpg)\
 timer.py is a simple Python script that is modified for use in the 'Nerves of Steel' game. <br />
+
 The program will show a message at the start to tell players to stand. <br />
 Then it will generate a random time between 5 to 25 seconds to put the program to sleep. <br />
 Upon timer expiry, the user will see "Time Up. Last to sit down wins." <br />
