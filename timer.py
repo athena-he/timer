@@ -1,23 +1,25 @@
 """
-This program is used as an example for MGTC28.
-timer.py is a simple Python script that will allow user to set timer duration.
-Upon timer expiry, user will see the time up meme and sound notification.
-timer.py uses the time library to help keep track of time
+ This program is for MGTC28's in-class exercise 4: Nerve of Steel game.
+ The code is modified from the forked timer.py project by Lazigerbill.
+ This is a simple Python script that will first display the words "Players stand",
+ then sleep for a random time between 5 to 25 seconds. During this time, players can sit down.
+ When sleep is over, the program displays "Time Up. Last to sit down wins."
+
+ 
 """
 
-
-# This program is timer that counts down
-
-
 import time # The time library has a sleep function that will pause the script for a specifized amount of time
-from PIL import Image # the pillow library makes it easy to display images 
+import random # The random library has a function that returns a random floating point number between a and b inclusive.
 
-im = Image.open("times-up.jpeg")
+# Display the words "Players stand"
+print("Players stand")
 
-# ask user to enter desired countdown time
-set_time = int(input("Please set your timer in seconds: "))
+# Generate a random floating point number between 5.0 and 25.0 inclusive and set that as the sleep time. 
+set_time = random.uniform(5.0, 25.0)
 
+# Make the program sleep for the set amount of time.
 time.sleep(set_time)
 
-im.show()
-#this is an edit
+# Print "Time Up. Last to sit down wins." once the program finishes sleeping.
+print("Time Up. Last to sit down wins.")
+
