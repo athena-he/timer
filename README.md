@@ -11,6 +11,6 @@ Upon timer expiry, the user will see "Time Up. Last to sit down wins." <br />
 
 timer.py uses the **time library** to help keep track of time and the **random library** to generate a random time to put the program to sleep. <br />
 
-Please see the documentation for the library used:
+Please see the documentation for the libraries used:
 - [time](https://docs.python.org/3/library/time.html)
 - [random](https://www.programiz.com/python-programming/modules/random)
